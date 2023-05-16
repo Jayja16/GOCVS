@@ -1,0 +1,192 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open sans',sans-serif;
+}
+.navbar{
+    position: fixed;
+    top: 20px;
+    height: 40px;
+    left: 0;
+    padding: 0 15px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #adadad;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.navbar ul li a{
+    color:black;
+    font-size: 1rem;
+}
+.action-btn a{
+    color: white;
+}
+.navbar ul li a:hover{
+    color: #2691d9;
+}
+header{
+    position: relative;
+    padding:0 2rem;
+}
+.navbar .logo a{
+    font-size:25px;
+    font-weight: 700;
+    color: black;
+}
+.navbar .links{
+    display: flex;
+    gap:20px;
+}
+.navbar .links li a:focus {
+    color: #2691d9;
+}
+.navbar ul li {
+    position: relative;
+}
+.navbar ul li::after{
+    content:"";
+    position:absolute;
+    background: #2691d9;
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom: 10px;
+    transition: 1s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.navbar .toggle_btn{
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+}
+.action-btn{
+    position: relative;
+    top: -10px;
+    margin-bottom: 7px;
+    padding: 5px;
+    width:90px;
+    height:40px;
+    background:#2691d9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.action-btn:hover{
+    background: #8db1e0;
+}
+.container{
+    position: relative;
+    margin-top: 60px;
+    background-image: url("../images/pexels-leeloo-thefirst-8177924.jpg") ;
+    background-position: center ;
+    background-size: cover ;
+    height: 90vh;
+    text-align: center;
+    animation: change 10s infinite ease-in-out;
+}
+
+.sub_text {
+    width: 50%;
+    height: 10%;
+    color: #333;
+    position: relative;
+    top: 40%;
+    left: 23%;
+    backdrop-filter: blur(5px);
+    gap: 3px;
+}
+.verify{
+    margin:300px 0 340px 0;
+    /*margin-left:340px;*/
+    /*margin-bottom:200px;*/
+}
+.verify select{
+    height:40px;
+    font-size:16px;
+    border-radius:3px;
+    border: none;
+    outline: none;
+}
+.verify input{
+    height:40px;
+    border: none;
+    outline: none;
+    border-radius:3px;
+}
+.mat{
+    width:350px;
+    text-align: center;
+    font-size:16px;
+}
+.sub{
+    color:white;
+    width:90px;
+    height:40px;
+    font-size: 15px;
+    background: #2691d9;
+    border: none;
+    cursor:pointer;
+}
+.sub:hover{
+    background: #8db1e0;
+    transition:.5s;
+}
+.links span::after{
+    content:'';
+    position:absolute;
+    top:40px;
+    left:0;
+    width:0;
+    height:2px;
+    background: #2691d9;
+    transition:.5s;
+}
+
+footer {
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #adadad;
+    height: auto;
+    width:100%;
+    /*height: 80px;*/
+    padding:5px;
+    text-align:center;
+    font-size:15px;
+    line-height: 25px;
+}
+@keyframes change {
+    0%{
+        background-image: url("../images/pexels-leeloo-thefirst-8177924.jpg") ;
+
+    }
+    20%{
+        background-image: url("../images/o.level.jpg") ;
+
+    }
+    40%{
+        background-image: url("../images/pexels-leeloo-thefirst-8177924.jpg") ;
+
+    }
+    60%{
+        background-image: url("../images/pexels-leeloo-thefirst-8177924.jpg") ;
+
+    }
+    80%{
+        background-image: url("../images/o.level.jpg") ;
+
+    }
+    100%{
+        background-image: url("../images/pexels-leeloo-thefirst-8177924.jpg") ;
+
+    }
+
+}
